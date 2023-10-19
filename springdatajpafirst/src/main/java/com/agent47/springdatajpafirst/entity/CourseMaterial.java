@@ -27,7 +27,9 @@ public class CourseMaterial {
     private Long courseMaterialId;
     private String url;
     @OneToOne(
-            cascade = CascadeType.ALL
+            cascade = CascadeType.ALL,
+            optional = false,
+            fetch = FetchType.EAGER
     )
     @JoinColumn(
             name = "course_id", // Name of the column in CourseMaterial table

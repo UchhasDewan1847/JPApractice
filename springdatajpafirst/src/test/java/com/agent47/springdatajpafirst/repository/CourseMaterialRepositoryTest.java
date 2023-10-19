@@ -20,7 +20,6 @@ class CourseMaterialRepositoryTest {
                 .build();
         CourseMaterial courseMaterial= CourseMaterial.builder()
                 .url("Gooogle.com")
-                .course(course)
                 .build();
         courseMaterialRepository.save(courseMaterial);
     }
